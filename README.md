@@ -1,10 +1,19 @@
-# Paperazzi
+<div align="center">
 
-**A multi-agent AI assistant for evidence-linked scientific literature reviews.**
+# 🔎 Paperazzi
 
-Paperazzi searches research databases, inspects available paper text, synthesizes findings, and evaluates how well review statements are supported by their citations. Its purpose is to explore **agentic AI workflows** with transparent tool use, structured handoffs, and inspectable evidence—not to replace expert scientific review.
+### A multi-agent AI research assistant
 
-> **Status:** Working local multi-agent prototype. Citation support is assessed by LLM rubrics; independent scientific verification is **not connected**.
+**A hackathon project for learning and experimenting with Agentic AI through scientific literature review.**
+
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue) ![LangChain](https://img.shields.io/badge/Agents-LangChain-purple) ![Status](https://img.shields.io/badge/Status-Hackathon%20Prototype-orange) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+</div>
+
+
+Paperazzi searches research databases, inspects available paper text, synthesizes findings, and evaluates how well review statements are supported by their citations. Its purpose is to explore **agentic AI workflows** with transparent tool use, structured handoffs, and inspectable evidence.
+
+> **Hackathon learning project:** Built to practice agent design, tool calling, multi-agent coordination, feedback loops, and evidence tracing. This is an experimental prototype, not a validated scientific review service.
 
 ## How it works
 
@@ -85,9 +94,13 @@ The tests use fixtures and scripted model behavior. They do not establish live-m
 - [Installation and configuration](docs/getting-started.md)
 - [Citation evaluation](docs/evaluation.md)
 - [API reference](docs/api.md)
-- [Limitations and validation gaps](docs/limitations.md)
 - [Learning milestones and next steps](docs/development.md)
 
-## Scope and limitations
+## About this project
 
-Paperazzi is a **research and Agentic AI learning prototype**. It is not an autonomous scientific fact-checker. The Reader's semantic judgments can be wrong; the Judge uses LLM rubrics; source extraction is bounded and does not fully reconstruct tables, figures, or supplements. The local multi-agent run initially selects up to four papers and can add at most two more. See [limitations](docs/limitations.md).
+Paperazzi was built for **hackathon learning and experimentation with Agentic AI**. The project focuses on understanding how specialized agents use tools, exchange structured evidence, recover from incomplete searches, and improve drafts through feedback. Citation ratings are LLM-based and should not be interpreted as independent scientific verification.
+
+## License
+
+Paperazzi is released under the [MIT License](LICENSE).
+
