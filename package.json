@@ -1,0 +1,14 @@
+{
+  "name": "agent-review",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "dev:agent": "node scripts/start-agent.mjs",
+    "test:agent": ".venv/bin/python -m unittest discover -s tests -p test_searcher.py -v",
+    "test:agents": ".venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v"
+  }
+}
